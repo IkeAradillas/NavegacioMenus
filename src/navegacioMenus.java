@@ -47,7 +47,8 @@ public class navegacioMenus {
                 case 2 -> {
                     System.out.println("Quin usuari vols afegir?");
                     sc.nextLine();
-                    usuaris.add(sc.nextLine());
+                    usuaris.addLast(sc.nextLine());
+                    System.out.println("S'ha creat correctament l'usuari " + usuaris.getLast());
                 }
 
                 case 0 -> {
